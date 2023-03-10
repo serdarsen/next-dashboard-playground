@@ -1,18 +1,26 @@
+import Header from "@/components/Header";
 import type { NextPage } from "next";
 import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <>
       <Head>
         <title>Next Dashboard Playground</title>
+        <meta
+          name="description"
+          content="Next.js Dashboard Playground"
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="flex w-full"></main>
-
-      <footer className="flex w-full"></footer>
-    </div>
+      <main className="min-h-screen bg-gray-100">
+        <Header />
+      </main>
+    </>
   );
 };
 
