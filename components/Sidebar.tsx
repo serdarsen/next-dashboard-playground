@@ -6,11 +6,11 @@ interface Prop {
 }
 
 const Sidebar = ({ children }: Prop) => (
-  <div className="flex">
-    <div className="fixed flex h-screen w-20 flex-col justify-between border-r-[1px] bg-white p-4">
+  <div className="flex dark:bg-slate-800 dark:text-gray-300">
+    <div className="fixed flex h-screen w-20 flex-col justify-between border-r p-4 dark:border-slate-700">
       <div className="flex flex-col items-center">
         <Link href="/">
-          <div>
+          <div className="inline-block rounded-lg bg-purple-800 p-3 text-white dark:text-gray-300">
             <RxSketchLogo size={20} />
           </div>
         </Link>
