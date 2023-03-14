@@ -36,7 +36,11 @@ const BarChart = () => {
 
     const textColor = isDarkMode
       ? "rgb(209, 213, 219, 0.9)"
-      : "black";
+      : "rgb(0, 0, 0, 0.8)";
+
+    const gridColor = isDarkMode
+      ? "rgb(209, 213, 219, 0.1)"
+      : "rgb(0, 0, 0, 0.1)";
 
     setData({
       labels: ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"],
@@ -71,6 +75,9 @@ const BarChart = () => {
               size: 14,
             },
           },
+          grid: {
+            color: gridColor,
+          },
         },
         x: {
           ticks: {
@@ -78,6 +85,9 @@ const BarChart = () => {
             font: {
               size: 14,
             },
+          },
+          grid: {
+            color: gridColor,
           },
         },
       },
