@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar--hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    box-shadow: unset;
+    background-color: transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+  }
+
+  .dark .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #818181;
+  }
+}
