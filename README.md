@@ -1,5 +1,7 @@
 ### [Live Preview on Vercel](https://next-dashboard-playground.vercel.app/)
 
+![Next Dashboard Playground](./docs/screenshot.png)
+
 ## Introduction
 
 Next Dashboard Playground
